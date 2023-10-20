@@ -32,22 +32,22 @@ const Post = () => {
           iframe?.contentWindow?.postMessage({ command: 'pong' }, '*')
         );
       }
-    })
-  });
+    });
+  })
 
   return (
     <div>
       <h1>Welcome to the React App!</h1>
       <p>This is a simple chat room web app.</p>
+      <iframe src="https://showroom.one-stage.kkstream.io/embed?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjE3N2RhODVjLTllZjgtNTVjYS05M2FkLTAyYTMyZjkwZjg2MyIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV9pZCI6ImMyZmZkM2U2LWMwYmYtNGMyZi1hOGU1LWU2MjgzY2IwMjk5NCIsInJlc291cmNlX3R5cGUiOiJSRVNPVVJDRV9UWVBFX0xJVkVfRVZFTlQifQ.aI9DdBikEi8H_06CRNNwc_248X5ECgclFjD_dRwdHkk8TSGJoMhG7RRTy1EmIV7qnPFszyE8K4Jxw2ygCMCiHCBiPnXdQ8G1ex2CWbMkYH6zGn60vf4jJI55KQah2wIFRTLFT2zPwW1HrMMHX_AqrIpsKgJKlM0jN9RFulUDhVQKbArAVxFctFgQOvhl2Ey5Exr_uoYwtmfoO-UsnyUo4OQ02ztgdYhd-OzuV_FgbxUB-A84b7DxTVVKvFj234Vq4PKJ59GcLNI2UNIwQ4OrqBcg7kQMYVAnJ55txHuirxGtOLXDC_Nw749EQUvwLyG9zgTyyXQShY_Hq2dzQmfqwMcl7bcWD_KjKEUAXP5VWQo9AoDNL3N7JROUpF_IbSdaiFAUajXEAbx8XGd8c67FLm17K-baOrM9Nep7_FvW3MoGkLVoUTNjDUCezwpZOu2ANe21iYvKNvpsQubkdpmUWjSGoNp34RICRoQ8m9s1yPy1T67amlNrkXWja6c-gJMSzxjLjDywD-2lL0PEvy5SYrXEemn17gBnAymup2J1anMmaOonWfX3eDH1PLLEoy-g1KjR4RF6DC44OZmf5JuIgRTRqrjcLzfSdMOcWOkcyhEfDdwMd0b_gHzMOedFWKeYfInI8Fs47GLtoZ1RNQ2k0ppGx9gyHUcERdLKjt4tpEw" 
+      width="640" 
+      height="360" 
+      allow="autoplay; encrypted-media; clipboard-write" 
+      frameborder="0" 
+      allowfullscreen></iframe>
+
       <button onClick={handleSendMessage}>Send Message</button>
       <button onClick={handleCleanMessage}>Clean Message</button>
-      <iframe src="https://showroom.one-stage.kkstream.io/embed?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjE3N2RhODVjLTllZjgtNTVjYS05M2FkLTAyYTMyZjkwZjg2MyIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV9pZCI6IjE1NzYzMDIzLWIyZWUtNDNjMS04YTI3LWM2NThlZjBlN2NiMSIsInJlc291cmNlX3R5cGUiOiJSRVNPVVJDRV9UWVBFX1ZPRF9FVkVOVCJ9.Bu1JZPftJy0pGTgWzh_g3gG7Xsypb03SwCaT5TzLXn9mcWDudBO_8W8bPrQvNvgvp2PbEu06wCupiNiDp1r-xGO_sat93hUQTzvCtgV4ndDm7fFxW32hYDckfGnZzLsHOHgA55Vxzv80fakshgEP48zxsMsLigkTI9gVSX-SrPL0ZSaqzqGlt3vlSVQezjcg_lglctk0bcjeClW2L3jrwj2GS3IQWwBkTecjTRLp47O6k2Ze7JJRGaMIIvFbbXLxyFWyjcTEMkkM4TtRAKppEhWoiZDbn8KnWLA2OrShGw415yXz-yP36EvpWCV6U6efSAT8Wvp5rMcbK7WuzvzjR4Qat9HJ8Ss1C86W9nTlY1jw2muTbwzOwvgZHZ7rgBHAz46ZMIqhDjgMhygTSt_i6erqhi-F-b7ZjpywqWK3l8Bpjf_xamAFTBr_HN48e8toQW7x_iR2SxlitS5_ohG-sOtMldMUhCEcPYEmKGzacpmaMUHenjkGfnNhVhgacmtjU-EgnFumqZE0TUycd6QMTNHlMEqqrR3kEo1UDFBw6Sx2Hk7CPtGauhTDjlaiUaYxyLnwlYpSdVF5EJ0XfQugFcW5KkGEIdmh-HT0QPl6lKl3HunDPX17SWk9E4bqsGnss8iuwV4FMWGs96bpzCKFQ33PNBaDomkRGeTCNIE8r8c"
-        width="640"
-        height="360"
-        allow="autoplay; encrypted-media; clipboard-write"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
       <ul>
         {posts.map((message, index) => (
           <li key={index}>{message}</li>
