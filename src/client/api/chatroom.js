@@ -78,14 +78,31 @@ async function server_createEvent(user, message, date) {
         date: date
     };
 
-    let result = await fetch(`${mcurl}/api/message`, {
+    const options = {
         method: 'POST',
+        url: mcurl,
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(newEvent)
+    }
+
+    //let result = await fetch(`${mcurl}/api/message`, {
+    //    method: 'POST',
+    //    headers: {
+    //        'Content-Type': 'application/json'
+    //    },
+    //    body: JSON.stringify(newEvent)
+    //});
+
+    console.log(`Making request to: ${mcurl}`);
+
+    return axios(options).then(
+        response => {
+            console.log(JSON.stringify(response.data));
+        }
+    ).catch(error => {
+        console.log(error);
     });
 
-    console.log('sent', result);
-    return newEvent;
 }
