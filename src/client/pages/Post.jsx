@@ -43,9 +43,10 @@ const Post = () => {
       allow="autoplay; encrypted-media; clipboard-write" 
       frameborder="0" 
       allowfullscreen></iframe>
-
-      <button onClick={handleSendMessage}>Send Message</button>
-      <button onClick={handleCleanMessage}>Clean Message</button>
+      <div>
+        <button onClick={handleSendMessage}>Send Message</button>
+        <button onClick={handleCleanMessage}>Clean Message</button>
+      </div>
       <ul>
         {posts.map((message, index) => (
           <li key={index}>{message}</li>
