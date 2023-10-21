@@ -31,7 +31,7 @@ const OffcanvasExample = (props) => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel`}>
-              Mchackathon07
+              MChackathon07
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
