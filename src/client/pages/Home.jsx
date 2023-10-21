@@ -6,6 +6,8 @@ import { useOutletContext } from "react-router-dom";
 
 import { getWeather, getMessage } from "../api/chatroom";
 
+import { ParseMessage} from "../api/chatroom";
+
 import IframePlayer from "../components/IframePlayer.jsx";
 
 import "react-bootstrap";
@@ -35,13 +37,14 @@ const Home = () => {
     })
   });
   
-  useEffect(() => {
-    getWeather();
-  });
+  // useEffect(() => {
+  //   ReadWeb();
+  // });
 
   useEffect(() => {
-    getMessage();
+    ParseMessage();
   });
+
   
   return (
     <div>

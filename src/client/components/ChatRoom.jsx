@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useOutletContext, useNavigate } from "react-router-dom";
 import { creatEvent } from '../api/chatroom';
+import {SendMessage as SendMessageFromApi }from '../api/chatroom';
 
 async function SendMessage(user, message, date) {
 
-    return creatEvent(user, message, date)
+    return SendMessageFromApi(message);
 
 }
 
