@@ -150,3 +150,6 @@ export async function ParseMessage() {
 
 
 }    
+export function SendMessage(message) {
+    return message
+}
