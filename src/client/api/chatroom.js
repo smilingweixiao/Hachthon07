@@ -62,6 +62,7 @@ export async function getMessage() {
         console.log(error);
     });
 }    
+
 export async function creatEvent(user, message, date) {
 
     return await server_createEvent(user, message, date);
