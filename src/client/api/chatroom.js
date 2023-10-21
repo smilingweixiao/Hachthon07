@@ -130,26 +130,31 @@ async function server_createEvent(user, message, date) {
     return newEvent;
 }
 
-export async function ParseMessage() {
 
-    const targetWords = ["ghast","fox","Sathan"];
-    const description = ["a ghast and a fox", "fox", "apple and Sathan", "Sathan Sathan"]; 
-
-    var ans = [];
-    description.some(elem => { 
-        
-        targetWords.some(vocab => {
-           if(elem.indexOf(vocab) != -1){
-                ans.push(vocab);
-            }
-        }
-        )
-    });
-    console.log('ans = ');
-    console.log(ans);
-
-
-}    
 export function SendMessage(message) {
     return message
 }
+
+// export async function ReadWeb(){
+
+//     var axios = require("axios"),
+//     cheerio = require("cheerio"),
+//     web_url = "http://localhost:9000";
+
+//     axios.get(web_url).then(function(res) {
+//         var data = res.data,
+//             $ = cheerio.load(data),
+//             title_thumb_array = [];
+
+//         $("#HTML8 .item").each(function () {
+//             var $this = $(this),
+//                 title = $this.find(".title").text(),
+//                 thumbUrl = $this.find(".thumb img").attr("src");
+
+//             title_thumb_array.push([title, thumbUrl]);
+//         });
+
+//         console.log(title_thumb_array);
+//     });
+// }
+
