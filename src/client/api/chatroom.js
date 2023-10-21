@@ -1,9 +1,3 @@
-// const targetWords = ["ghast","fox","Sathan"];
-// const description = "Mr.Burns entered to the hall.";
-// let isInclude = targetWords.some(word => description.includes(word));
-
-// console.log(isInclude);
-
 import { v4 as uuid } from 'uuid';
 import axios from 'axios';
 
@@ -136,4 +130,23 @@ async function server_createEvent(user, message, date) {
     return newEvent;
 }
 
-}
+export async function ParseMessage() {
+
+    const targetWords = ["ghast","fox","Sathan"];
+    const description = ["a ghast and a fox", "fox", "apple and Sathan", "Sathan Sathan"]; 
+
+    var ans = [];
+    description.some(elem => { 
+        
+        targetWords.some(vocab => {
+           if(elem.indexOf(vocab) != -1){
+                ans.push(vocab);
+            }
+        }
+        )
+    });
+    console.log('ans = ');
+    console.log(ans);
+
+
+}    

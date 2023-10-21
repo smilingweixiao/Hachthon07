@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { useOutletContext } from "react-router-dom";
 
-import { getWeather, getMessage, geneateMessage} from "../api/chatroom";
+import { getWeather, getMessage, geneateMessage, ParseMessage} from "../api/chatroom";
 
 /**
  * Renders a Home component with a title "Home page" 
@@ -31,16 +31,20 @@ const Home = () => {
     })
   });
   
-  useEffect(() => {
-    getWeather();
-  });
+  // useEffect(() => {
+  //   getWeather();
+  // });
+
+  // useEffect(() => {
+  //   geneateMessage();
+  // });
+
+  // useEffect(() => {
+  //   getMessage();
+  // });
 
   useEffect(() => {
-    geneateMessage();
-  });
-
-  useEffect(() => {
-    getMessage();
+    ParseMessage();
   });
 
 

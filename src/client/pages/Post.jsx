@@ -44,7 +44,7 @@ const Post = () => {
       frameborder="0" 
       allowfullscreen></iframe>
       <div>
-        <button onClick={handleSendMessage}>Sen Message</button>
+        <button onClick={handleSendMessage}>Send Message</button>
         <button onClick={handleCleanMessage}>Clean Message</button>
       </div>
       <ul>
