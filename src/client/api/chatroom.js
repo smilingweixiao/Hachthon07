@@ -1,6 +1,6 @@
-// const badWords = ["Donald Trump","Mr.Burns","Sathan"];
+// const targetWords = ["ghast","fox","Sathan"];
 // const description = "Mr.Burns entered to the hall.";
-// let isInclude = badWords.some(word => description.includes(word));
+// let isInclude = targetWords.some(word => description.includes(word));
 
 // console.log(isInclude);
 
@@ -39,11 +39,13 @@ export function getWeather() {
     });
 }
 
+// const pageToken = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE3N2RhODVjLTllZjgtNTVjYS05M2FkLTAyYTMyZjkwZjg2MyIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmJpdCIsInN1YiI6IjJmOTQ4Y2YzLWI0MGItNDk5Yi04Y2ZmLTk2OGMzMWE5NjA1MiIsImV4cCI6MTY5Nzg3Nzk0OCwiaWF0IjoxNjk3ODc0MzQ4LCJqdGkiOiJkMzExZDQ1Ny0zYTZiLTQzNGYtYWY4My1lNjlkMzc3ZWMwNGMiLCJ0b2tlbl91c2UiOiJsb2dpbl9hY2Nlc3MiLCJvcmlnaW5fanRpIjoiZmUzZGFmMDYtZDJlMC00NzU5LWI3ZmYtMmI0OWY3YzNiMWQxIiwiZW1haWwiOiJtaWtlOTExMjA5QGdtYWlsLmNvbSIsIm9yZ19pZCI6IjNkMjFlNTc2LWU4MmQtNGYyOC05NmU0LTczNGFlNjhjNGI5ZSIsInJvbGVfdHlwZSI6IlJPTEVfVFlQRV9BRE1JTiJ9.S2r1e7kPXtF4lbxm2kU3okh2CsPiBZiVmnAGB0VPuq9MIlPiFDQxzGOx6gqeVtJlgOMxypyJtTpuZb0TyR16oh5I963sSTOWUZrfuiPdF6k3yY9BGmWtz3LU01NfDlRfIfH39ItSguEOI-G8FwPUIXwt0-sro55fT9pRe2TvybRvN0jLurjHcuRS2xExcAHB5rWNagSZ-exTbero55NamTY_bzg9EEYAYH_5MqUypT2qnxLXx2g9tgDCmqX3NOid9YMkEdvDKfVdz-GP9AWQnLLE4NqHA90gQKuqt7gQaLik3UOQRsJEDpwowR6aXq3rgKfp_hsmZwNBRAOvCCqE4X1zB0DHqoU8mM0yNaJlfSYuAzYxKQw-u6EQktNvRKothdQSEMOyARALl01MyGcnIjIIAum6BK-v7t9zlBkzYnZR8HrtwL8bk76gdH0e8qCx62R6erY5bEedaabtOsUCAktYcRQEYDWgVNq_IeapiPjht333gOMU47QdhPJkOcAcZuCguJ3QCgfb_t9QxiAmnp4UVRHbBADCCr-druGjMUOiMfkmy5AurPGYDU0ZSAnqLOrwX9BrDHUNThpiexJpnpihsrJ7mgC9mxucFOPcuwD87qVIbNe7G0EvxrNzkGJ75-hbUXolk3J5kLOY6HqNvUIyVl1HFl2LY5Vk1lIjc0E"
+
 const options_1 = {
     method: 'GET',
     url: url,
     headers: {
-      'authorization': `Bearer ${accessToken}`,
+      'authorization': `Bearer ${accessTokenToken}`,
       'Accept': 'application/json'
     },
 };
