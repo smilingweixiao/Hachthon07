@@ -5,6 +5,7 @@ import { setStatus } from '../store/users/actions';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import OffcanvasExample from '../components/offcanvasexample'
+import ChatRoom from "../components/ChatRoom"
 
 import { useAuthenticator } from '@aws-amplify/ui-react';
 import '../style/default.css';
@@ -40,13 +41,17 @@ const DefaultLayout = () => {
   })
 
   return (
-    <Container fluid className='m-0 p-0'>
-      <OffcanvasExample user={user} authStatus={authStatus} signOut={signOut}></OffcanvasExample>
-      <div className='m-4'>
-        <h1>MChackathon07</h1>
-        <Outlet context={[user, authStatus]}/>
-      </div>
-    </Container>
+    <div>
+      <Container fluid className='m-0 p-0'>
+        <OffcanvasExample user={user} authStatus={authStatus} signOut={signOut}></OffcanvasExample>
+        <div className='m-4'>
+          <h1>MChackathon07</h1>
+          <Outlet context={[user, authStatus]}/>
+        </div>
+      </Container>
+      <ChatRoom/> 
+    </div>
+    
   )
 };
 
