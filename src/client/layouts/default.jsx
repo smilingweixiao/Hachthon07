@@ -43,7 +43,7 @@ const DefaultLayout = () => {
     <Container fluid className='m-0 p-0'>
       <OffcanvasExample user={user} authStatus={authStatus} signOut={signOut}></OffcanvasExample>
       <div className='m-4'>
-        <h1>Mchackathon07</h1>
+        <h1>MChackathon07</h1>
         <Outlet context={[user, authStatus]}/>
       </div>
     </Container>
