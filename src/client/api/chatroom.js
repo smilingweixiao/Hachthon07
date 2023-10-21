@@ -45,7 +45,7 @@ const options_1 = {
     method: 'GET',
     url: url,
     headers: {
-      'authorization': `Bearer ${accessTokenToken}`,
+      'authorization': `Bearer ${accessToken}`,
       'Accept': 'application/json'
     },
 };
