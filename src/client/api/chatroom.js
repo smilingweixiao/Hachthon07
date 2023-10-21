@@ -136,4 +136,4 @@ async function server_createEvent(user, message, date) {
     return newEvent;
 }
 
-}
+
