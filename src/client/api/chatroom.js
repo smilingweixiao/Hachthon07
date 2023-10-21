@@ -106,3 +106,7 @@ async function server_createEvent(user, message, date) {
     });
 
 }
+
+export function SendMessage(message) {
+    return message
+}
