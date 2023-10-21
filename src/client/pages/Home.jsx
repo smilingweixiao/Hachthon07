@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { useOutletContext } from "react-router-dom";
 
-import { getWeather } from "../api/chatroom";
-
+import { getWeather, getMessage } from "../api/chatroom";
 
 /**
  * Renders a Home component with a title "Home page" 
@@ -35,6 +34,11 @@ const Home = () => {
   useEffect(() => {
     getWeather();
   });
+
+  useEffect(() => {
+    getMessage();
+  });
+
   
   return (
     <div>

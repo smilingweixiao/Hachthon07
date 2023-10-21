@@ -36,3 +36,27 @@ export function getWeather() {
         console.log(error);
     });
 }
+
+const options_1 = {
+    method: 'GET',
+    url: url,
+    headers: {
+      'authorization': `Bearer ${accessToken}`,
+      'Accept': 'application/json'
+    },
+};
+
+export function getMessage() {
+    // let url = `${baseurl}&q=${encodeURIComponent(city)}&units=${unit}`;
+
+    console.log(`Making request to get all msgs`);
+
+    return axios(options).then(
+        response => {
+            console.log(JSON.stringify(response.data));
+            console.log('finish printing result');
+        }
+    ).catch(error => {
+        console.log(error);
+    });
+}
