@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useOutletContext, useNavigate } from "react-router-dom";
 
 import { addMessage, cleanMessage } from '../store/posts/actions';
-
+import {SendMessage as SendMessageFromApi }from '../api/chatroom';
 
 const Post = () => {
   const [user, authStatus] = useOutletContext();
@@ -44,7 +44,8 @@ const Post = () => {
       frameborder="0" 
       allowfullscreen></iframe>
       <div>
-        <button onClick={handleSendMessage}>Sen Message</button>
+        <button onClick={handleSendMessage}>Send Message</button>
+        <button onClick={ (event) => {handleSendMessage;SendMessageFromApi;}}>Sen Message</button>
         <button onClick={handleCleanMessage}>Clean Message</button>
       </div>
       <ul>
