@@ -36,8 +36,8 @@ const OffcanvasExample = (props) => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Link className="nav-link" to='/'>Video</Link>
-              <Link className="nav-link" to='/post'>Streaming</Link>
+              <Link className="nav-link" to='/'>Streaming</Link>
+              <Link className="nav-link" to='/post'>Video</Link>
             </Nav>
             {button}
           </Offcanvas.Body>
