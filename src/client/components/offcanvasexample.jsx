@@ -60,7 +60,7 @@ const OffcanvasExample = (props) => {
                 }} 
                 onMouseEnter={(e) => e.target.style.backgroundColor = '#e6e6fa'} 
                 onMouseLeave={(e) => e.target.style.backgroundColor = 'white'}
-                >Video</Link>
+                >Streaming</Link>
               <Link className="nav-link" to='/post'
                 style={{ 
                   color: '#6495ed', 
@@ -70,7 +70,7 @@ const OffcanvasExample = (props) => {
                   // margin: 8
                 }} onMouseEnter={(e) => e.target.style.backgroundColor = '#e6e6fa'} 
                 onMouseLeave={(e) => e.target.style.backgroundColor = 'white'}
-                >Streaming</Link>
+                >Video</Link>
             </Nav>
             {button}
           </Offcanvas.Body>
