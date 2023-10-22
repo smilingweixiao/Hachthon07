@@ -44,9 +44,9 @@ const Post = () => {
       frameborder="0" 
       allowfullscreen></iframe>
       <div>
-        <button onClick={handleSendMessage}>Send Message</button>
-        <button onClick={ (event) => {handleSendMessage;SendMessageFromApi;}}>Sen Message</button>
-        <button onClick={handleCleanMessage}>Clean Message</button>
+        <button style={{ backgroundColor: '#6495ed', color: 'white', borderRadius: '10px', padding:10, margin: 8 }} onClick={handleSendMessage}>Send Message</button>
+        {/* <button style={{ backgroundColor: '#6495ed', color: 'white', borderRadius: '10px', padding:10}} onClick={ (event) => {handleSendMessage;SendMessageFromApi;}}>Sen Message</button> */}
+        <button style={{ backgroundColor: '#6495ed', color: 'white', borderRadius: '10px', padding:10}} onClick={handleCleanMessage}>Clean Message</button>
       </div>
       <ul>
         {posts.map((message, index) => (
