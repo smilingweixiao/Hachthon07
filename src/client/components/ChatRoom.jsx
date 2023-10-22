@@ -15,7 +15,7 @@ const ChatRoom = () => {
     SendMessage("me", "fox", "2023");
     return (
         <div>
-            hello
+            {/* hello */}
         </div>
     )
 

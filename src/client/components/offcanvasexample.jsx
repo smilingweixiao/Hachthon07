@@ -20,10 +20,10 @@ const OffcanvasExample = (props) => {
   }
 
   return (
-    <Navbar bg="light" expand={false} className="mb-3">
+    <Navbar style={{ backgroundColor: '#00008b' }} expand={false} className="mb-3">
       <Container fluid>
         <Navbar.Toggle aria-controls={`offcanvasNavbar`} />
-        <Navbar.Brand href="#">MChackathon07髮際線總是在跟我作隊</Navbar.Brand>
+        <Navbar.Brand href="#" style={{ color: 'white' }}>MChackathon07髮際線總是在跟我作隊</Navbar.Brand>
         <Navbar.Offcanvas
           id={`offcanvasNavbar`}
           aria-labelledby={`offcanvasNavbarLabel`}
