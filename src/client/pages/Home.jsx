@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { useOutletContext } from "react-router-dom";
 
-import { ParseMessage} from "../api/chatroom";
+import { ParseMessage} from "./TextFilter";
 
 /**
  * Renders a Home component with a title "Home page" 
