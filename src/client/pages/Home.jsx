@@ -4,9 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { useOutletContext } from "react-router-dom";
 
-import { getWeather, getMessage } from "../api/chatroom";
-
-import { ParseMessage} from "../api/chatroom";
+import { ParseMessage} from "./TextFilter";
 
 import IframePlayer from "../components/IframePlayer.jsx";
 
